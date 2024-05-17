@@ -35,7 +35,6 @@ html {height:auto}
 body {
   display: grid;
   align-content: center;
-  min-height: 1029px;
 }
 
 main {
