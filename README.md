@@ -11,8 +11,8 @@ Users should be able to:
   - A required field has been missed
   - The email address is not formatted correctly
 - [x] Complete the form only using their keyboard
-- [ ] (untested) Have inputs, error messages, and the success message announced on their screen reader
-- [x] (wip) View the optimal layout for the interface depending on their device's screen size
+- [x] Have inputs, error messages, and the success message announced on their screen reader
+- [x] View the optimal layout for the interface depending on their device's screen size
 - [x] See hover and focus states for all interactive elements on the page
 
 ## Screenshot
@@ -21,7 +21,7 @@ Users should be able to:
 
 ## Links
 
-- [Solution URL](https://meelix.github.io/frontendmentor-contact-form/)
+- [Solution URL](https://www.frontendmentor.io/solutions/contact-form-AEPigUHSVB)
 - [Live Site URL](https://meelix.github.io/frontendmentor-contact-form/)
 
 ## Built with
