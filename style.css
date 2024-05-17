@@ -31,16 +31,29 @@ html,body{
   background-color: var(--lightgreen);
   color: var(--dimmgreen);
 }
+html {height:auto}
+body {
+  display: grid;
+  align-content: center;
+}
 
 main {
   display: grid;
   place-items: center;
   padding: 56px 20px 20px;
   width: 100%;
+  /* min-height: 100%; */
 }
 
 h1 {
   margin: 0;
+
+  font-family: Karla;
+  font-size: var(--font-size-heading, 32px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 32px */
+  letter-spacing: -1px;
 }
 
 form {
@@ -51,10 +64,14 @@ form {
   max-width: 736px;
   min-width: 0;
   width: 100%;
+  container-name: form;
+  container-type: inline-size;
 
   fieldset {
     border: 0;
     padding: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
@@ -88,7 +105,7 @@ form {
     line-height: 150%;
   }
 
-  .required .label:after {
+  .required .asterisk {
     content: '*' / '';
     color: var(--green);
     font-family: Karla;
@@ -162,6 +179,7 @@ form {
   .radiooptions {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
+    margin-top: 8px;
 
     gap: 16px;
   }
@@ -209,9 +227,13 @@ form {
       border: 1px solid transparent;
       display: flex;
       align-items: center;
-      height: 51px;
-
+      height: 54px;
     }
+
+    [type="checkbox"] {
+      margin-right: 16px;
+      margin-left: 3px;
+    }    
     .inputwrapper:has( [type="checkbox"]:user-invalid) {
       accent-color: var(--error);
       border: 1px solid var(--error);
@@ -233,9 +255,6 @@ form {
   textarea {
     height: 240px;
     resize: none;
-    @media (min-width: 656px) {
-      height: 132px;
-    }
   }
 
   input[type="submit"] {
@@ -272,6 +291,11 @@ form {
   }
 
   .firstname, .lastname.lastname {grid-column: auto / span 1;}
+}
+@container form (width > 515px) {
+  form textarea {
+    height: 105px;
+  }
 }
 
 

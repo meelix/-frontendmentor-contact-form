@@ -12,25 +12,25 @@
 </head>
 <body id="body">
   <main>
-    <form>
-      <h1 class="title">Contact Us</h1>
+    <form aria-labelledby="contactform-title">
+      <h1 class="title" id="contactform-title">Contact Us</h1>
       <label class="firstname field required">
-        <span class="label">First Name</span>
+        <span class="label">First Name<span aria-hidden="true" class="asterisk">*</span></span>
         <input name="firstname" required autocomplete="given-name">
         <span class="errormsg"></span>
       </label>
       <label class="lastname field required">
-        <span class="label">Last Name</span>
+        <span class="label">Last Name<span aria-hidden="true" class="asterisk">*</span></span>
         <input name="lastname" required autocomplete="family-name" >
         <span class="errormsg"></span>
       </label>
       <label class="emailaddress field required">
-        <span class="label">Email Address</span>
+        <span class="label">Email Address<span aria-hidden="true" class="asterisk">*</span></span>
         <input name="emailaddress" type="email" required autocomplete="email">
         <span class="errormsg"></span>
       </label>
       <fieldset class="querytype field required" aria-label="Query Type">
-        <span class="label">Query Type</span>
+        <span class="label">Query Type<span aria-hidden="true" class="asterisk">*</span></span>
         <div class="radiooptions">
           <label class="option">
             <input type="radio" name="querytype" value="generalenquiry" required>
@@ -44,14 +44,14 @@
         <span class="errormsg"></span>
       </fieldset>
       <label class="message field required">
-        <span class="label">Message</span>
+        <span class="label">Message<span aria-hidden="true" class="asterisk">*</span></span>
         <textarea name="message" required></textarea>
         <span class="errormsg"></span>
       </label>
       <label class="consent field checkbox required">
         <span class="inputwrapper">
           <input type="checkbox" name="consent" value="Agreed" required>
-          <span class="label">I consent to being contacted by the team</span>
+          <span class="label">I consent to being contacted by the team<span aria-hidden="true" class="asterisk">*</span></span>
         </span>
         <span class="errormsg"></span>
       </label>
